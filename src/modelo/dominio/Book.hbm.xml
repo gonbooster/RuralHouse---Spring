@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 08-dic-2013 17:06:21 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="modelo.dominio.Book" table="BOOK">
+        <id name="bookNumber" type="int" access="field">
+            <column name="BOOKNUMBER" />
+            <generator class="assigned" />
+        </id>
+        <property name="isPaid" type="org.hibernate.type.NumericBooleanType" access="field">
+            <column name="ISPAID" />
+        </property>
+        <property name="bookDate" type="java.util.Date">
+            <column name="BOOKDATE" />
+        </property>
+        <property name="telephone" type="java.lang.String">
+            <column name="TELEPHONE" />
+        </property>
+        <one-to-one name="offer" class="modelo.dominio.Offer"></one-to-one>
+    </class>
+</hibernate-mapping>

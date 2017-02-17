@@ -1,0 +1,7 @@
+-Imortar librerias de hibernate, conector mysql y el jstl
+
+-Cambiar el user y el pass de hibernate (poner la de tu mysql)
+
+-Crear una bd en tu mysql con el nombre eventos
+
+- Arrancar el startwindows.xhtml y listo!!!

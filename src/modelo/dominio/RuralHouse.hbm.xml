@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 08-dic-2013 17:06:21 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="modelo.dominio.RuralHouse" table="RURALHOUSE">
+        <id name="serialVersionUID" type="long" access="field">
+            <column name="SERIALVERSIONUID" />
+            <generator class="increment" />
+        </id>
+        <property name="houseNumber" type="int">
+            <column name="HOUSENUMBER" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="DESCRIPTION" />
+        </property>
+        <many-to-one name="owner" class="modelo.dominio.Owner" fetch="join">
+            <column name="OWNER" />
+        </many-to-one>
+        <property name="city" type="java.lang.String">
+            <column name="CITY" />
+        </property>
+        <set name="offers" table="OFFER" inverse="true" lazy="false" access="field">
+            <key>
+                <column name="RURALHOUSE" />
+            </key>
+            <one-to-many class="modelo.dominio.Offer" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#QueryAvailability.xhtml"
+  PATH="/QueryAvailability.xhtml" SHAPE="272,33,0,0"
+  model-entity="JSFProcessGroup" persistent="true">
+  <PROCESS-ITEM ID="rules:#QueryAvailability.xhtml:0" NAME="item"
+   PATH="/QueryAvailability.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="volver::#StartWindows.xhtml" NAME="output"
+    PATH="/StartWindows.xhtml" TARGET="rules:#StartWindows.xhtml"
+    TITLE="volver" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+  <PROCESS-ITEM ID="rules:#QueryAvailability.xhtml:1" NAME="item1"
+   PATH="/QueryAvailability.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="error::#Error.xhtml" NAME="output"
+    PATH="/Error.xhtml" TARGET="rules:#Error.xhtml" TITLE="error" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#BookRuralHouse.xhtml"
+  PATH="/BookRuralHouse.xhtml" SHAPE="272,209,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#BookRuralHouse.xhtml:0" NAME="item"
+   PATH="/BookRuralHouse.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="volver::#StartWindows.xhtml" NAME="output"
+    PATH="/StartWindows.xhtml" TARGET="rules:#StartWindows.xhtml"
+    TITLE="volver" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+  <PROCESS-ITEM ID="rules:#BookRuralHouse.xhtml:1" NAME="item1"
+   PATH="/BookRuralHouse.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="aceptar::#Ok.xhtml" NAME="output"
+    PATH="/Ok.xhtml" TARGET="rules:#Ok.xhtml" TITLE="aceptar" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+  <PROCESS-ITEM ID="rules:#BookRuralHouse.xhtml:2" NAME="item2"
+   PATH="/BookRuralHouse.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="error::#Error.xhtml" NAME="output"
+    PATH="/Error.xhtml" TARGET="rules:#Error.xhtml" TITLE="error" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#SetAvailability.xhtml"
+  PATH="/SetAvailability.xhtml" SHAPE="280,448,50,73" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#SetAvailability.xhtml:0" NAME="item"
+   PATH="/SetAvailability.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="volver::#StartWindows.xhtml" NAME="output"
+    PATH="/StartWindows.xhtml" TARGET="rules:#StartWindows.xhtml"
+    TITLE="volver" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+  <PROCESS-ITEM ID="rules:#SetAvailability.xhtml:1" NAME="item1"
+   PATH="/SetAvailability.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="aceptar::#SetAvailability2.xhtml"
+    NAME="output" PATH="/SetAvailability2.xhtml"
+    TARGET="rules:#SetAvailability2.xhtml" TITLE="aceptar" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+  <PROCESS-ITEM ID="rules:#SetAvailability.xhtml:2" NAME="item2"
+   PATH="/SetAvailability.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="error::#Error.xhtml" NAME="output"
+    PATH="/Error.xhtml" TARGET="rules:#Error.xhtml" TITLE="error" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#SetAvailability2.xhtml"
+  PATH="/SetAvailability2.xhtml" SHAPE="32,369,0,0"
+  model-entity="JSFProcessGroup" persistent="true">
+  <PROCESS-ITEM ID="rules:#SetAvailability2.xhtml:0" NAME="item"
+   PATH="/SetAvailability2.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="aceptar::#Ok.xhtml" NAME="output"
+    PATH="/Ok.xhtml" TARGET="rules:#Ok.xhtml" TITLE="aceptar" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="volver::#StartWindows.xhtml" NAME="output1"
+    PATH="/StartWindows.xhtml" TARGET="rules:#StartWindows.xhtml"
+    TITLE="volver" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+  <PROCESS-ITEM ID="rules:#SetAvailability2.xhtml:1" NAME="item1"
+   PATH="/SetAvailability2.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="error::#Error.xhtml" NAME="output"
+    PATH="/Error.xhtml" TARGET="rules:#Error.xhtml" TITLE="error" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#Ok.xhtml" PATH="/Ok.xhtml"
+  SHAPE="528,369,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#Ok.xhtml:0" NAME="item" PATH="/Ok.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="volver::#StartWindows.xhtml" NAME="output"
+    PATH="/StartWindows.xhtml" TARGET="rules:#StartWindows.xhtml"
+    TITLE="volver" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#Error.xhtml" PATH="/Error.xhtml"
+  SHAPE="528,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#Error.xhtml:0" NAME="item"
+   PATH="/Error.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="volver::#StartWindows.xhtml" NAME="output"
+    PATH="/StartWindows.xhtml" TARGET="rules:#StartWindows.xhtml"
+    TITLE="volver" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#StartWindows.xhtml"
+  PATH="/StartWindows.xhtml" SHAPE="816,144,50,25"
+  model-entity="JSFProcessGroup" persistent="true"/>
+</PROCESS>

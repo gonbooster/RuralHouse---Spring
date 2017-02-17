@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:ui="http://java.sun.com/jsf/facelets"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:f="http://java.sun.com/jsf/core">
+<f:view>
+<head><title>Set availability</title></head>
+<body>
+<h:form>
+<table align="center">
+<TR>
+<TD>Rural House:</TD>
+<TD> <h:selectOneMenu value="#{sab.casa}" converter="#{ruralHouseConverter}" id="selectOneRuralHouses">
+            <f:selectItem itemLabel="-- Select One --" itemValue="#{null}" />  
+            <f:selectItems var="casa" value="#{sab.ruralHouses}" />
+</h:selectOneMenu>
+</TD>
+<TD>Price:</TD>
+<TD><h:inputText id="price" value="#{sab.price}"></h:inputText></TD>
+</TR>
+<TR>
+<TD></TD>
+<TD>Inicio: <h:inputText id="fd" value="#{sab.firstDay}"></h:inputText></TD>
+<TD></TD>
+<TD>Fin: <h:inputText id="ld" value="#{sab.lastDay}"></h:inputText></TD>
+</TR>
+<TR>
+<TD></TD>
+<TD>(Formato: dia/mes/año) <h:commandButton action="#{sab.comprobarS2}" value="Aceptar" /></TD>
+<TD></TD>
+<TD><h:commandButton value="Volver" action="volver"/> </TD>
+</TR>
+</table>
+</h:form>
+</body>
+</f:view>
+</html>

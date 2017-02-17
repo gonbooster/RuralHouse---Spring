@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="">
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost/eventos</property>
+  <property name="hibernate.connection.username">gon</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+  <property name="hibernate.hbm2ddl.auto">create</property>
+  <property name="hibernate.current_session_context_class">thread</property>
+  <property name="hibernate.connection.pool_size">1</property>
+  <property name="hibernate.connection.autocommit">true</property>
+  <property name="hibernate.show_sql">true</property>
+  <property name="hibernate.format_sql">true</property>
+  <property name="hibernate.connection.password">1234</property>
+  <mapping class="modelo.dominio.RuralHouse" resource="modelo/dominio/RuralHouse.hbm.xml"/>
+  <mapping class="modelo.dominio.Offer" resource="modelo/dominio/Offer.hbm.xml"/>
+  <mapping class="modelo.dominio.Owner" resource="modelo/dominio/Owner.hbm.xml"/>
+  <mapping class="modelo.dominio.Book" resource="modelo/dominio/Book.hbm.xml"/>
+ </session-factory>
+</hibernate-configuration>

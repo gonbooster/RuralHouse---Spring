@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:ui="http://java.sun.com/jsf/facelets"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:f="http://java.sun.com/jsf/core">
+<f:view>
+<head><title>Query availability</title></head>
+<body>
+<h:form>
+<h:dataTable styleClass="tabla" id="tabla" value="#{qab.ofertas}" var="tabOfert">
+      <h:column> 
+         <f:facet name="header">Offer</f:facet>
+         #{tabOfert.offerNumber}
+      </h:column>
+      <h:column>    				
+         <f:facet name="header">Price</f:facet>    				
+         #{tabOfert.price}
+      </h:column>
+      <h:column>    				
+         <f:facet name="header">FirstDay</f:facet>    				
+         #{tabOfert.firstDay}
+      </h:column>
+       <h:column>    				
+         <f:facet name="header">LastDay</f:facet>    				
+         #{tabOfert.lastDay}
+      </h:column>
+   </h:dataTable>
+<table align="center">
+<TR>
+<TD>Rural House:</TD>
+<TD>
+<h:selectOneMenu value="#{qab.casa}" converter="#{ruralHouseConverter}">
+<f:selectItems value="#{qab.ruralHouses}" />
+</h:selectOneMenu>
+</TD>
+</TR>
+<TR>
+<TD>First day:</TD>
+<TD><h:inputText id="firstDay" value="#{qab.firstDay}"></h:inputText></TD>
+</TR>
+<TR>
+<TD>Number of nights:</TD>
+<TD><h:inputText id="numnights" value="#{qab.nNights}"></h:inputText></TD>
+</TR>
+<TR>
+<TD></TD>
+</TR>
+<TR>
+<TD><h:commandButton action="#{qab.comprobarQ}" value="Aceptar" /></TD>
+<TD>
+<h:commandButton action="volver" value="Volver" />
+</TD>
+</TR>
+</table>
+</h:form>
+</body>
+</f:view>
+</html>
